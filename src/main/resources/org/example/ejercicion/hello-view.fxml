@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<VBox fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="361.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1">
+<VBox fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="361.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.ejercicion.FormularioController">
    <children>
       <Label fx:id="lblTitulo" alignment="CENTER" contentDisplay="CENTER" prefHeight="71.0" prefWidth="723.0" text="FORMULARIO">
          <font>
