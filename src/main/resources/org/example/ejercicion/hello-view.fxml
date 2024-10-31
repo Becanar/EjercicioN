@@ -1,16 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="org.example.ejercicion.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+
+<VBox fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="361.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="lblTitulo" alignment="CENTER" contentDisplay="CENTER" prefHeight="71.0" prefWidth="723.0" text="FORMULARIO">
+         <font>
+            <Font size="49.0" />
+         </font>
+      </Label>
+      <HBox fx:id="panelAparte" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="lblAparte" alignment="CENTER_RIGHT" prefHeight="60.0" prefWidth="100.0" text="NOMBRE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtAparte" prefHeight="31.0" prefWidth="490.0" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" top="15.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox fx:id="panelAparte1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="lblAparte1" alignment="CENTER_RIGHT" prefHeight="60.0" prefWidth="100.0" text="APELLIDO 1">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtAparte1" prefHeight="31.0" prefWidth="490.0" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" top="15.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox fx:id="panelAparte2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="lblAparte2" alignment="CENTER_RIGHT" prefHeight="60.0" prefWidth="100.0" text="APELLIDO 2">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtAparte2" prefHeight="31.0" prefWidth="490.0" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" top="15.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox fx:id="panelAparte3" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="lblAparte3" alignment="CENTER_RIGHT" prefHeight="60.0" prefWidth="100.0" text="PROFESIÓN">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtAparte3" prefHeight="31.0" prefWidth="490.0" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" top="15.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox fx:id="panelBotones" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="btGuardar" mnemonicParsing="false" onAction="#guardar" text="GUARDAR">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="150.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btCancelar" mnemonicParsing="false" onAction="#cancelar" text="CANCELAR">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
 </VBox>
